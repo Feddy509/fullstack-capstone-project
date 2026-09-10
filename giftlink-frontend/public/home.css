@@ -1,0 +1,82 @@
+/* ==========================================
+   Tâche 1 : Styliser le corps (body)
+   ========================================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+/* ==========================================
+   Tâche 2 : Fond et flou (Pseudo-élément body::before)
+   ========================================== */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    filter: blur(8px);
+    z-index: 1;
+}
+
+/* ==========================================
+   Tâche 3 : Stylisation de la zone de contenu
+   ========================================== */
+.container, .content-zone {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #333333;
+    max-width: 600px;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================
+   Tâche 4 : Titres, paragraphes et boutons
+   ========================================== */
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.lead {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555555;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    transform: translateY(-2px);
+}
