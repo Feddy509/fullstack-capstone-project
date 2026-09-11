@@ -29,6 +29,10 @@ function Navbar() {
                         <li className="nav-item">
                             <a className="nav-link" href="/app">Gifts</a> {/* Updated Link */}
                         </li>
+                        {/* Ajout du lien Search juste après Gifts */}
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/app/search">Search</Link>
+                        </li>
 
                     </ul>
                 </div>
