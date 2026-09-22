@@ -23,4 +23,10 @@
     "pino": "^8.21.0",
     "pino-pretty": "^10.3.1"
   }
+  "scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+}
 }
